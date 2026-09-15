@@ -3,28 +3,33 @@
 class Gossms < Formula
   desc "Terminal reimplementation of SQL Server Management Studio"
   homepage "https://github.com/radix29/gossms"
-  version "0.0.10"
+  version "0.0.11"
   license "GPL-3.0-or-later"
+
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
 
   on_macos do
     on_arm do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.10/gossms_v0.0.10_darwin_arm64.tar.gz"
-      sha256 "299c5ae4b0517dfb0db66acac63d6614b260fb807954b2bfc3e195b9e5746bbd"
+      url "https://github.com/radix29/gossms/releases/download/v0.0.11/gossms_v0.0.11_darwin_arm64.tar.gz"
+      sha256 "2ff1f135ee55b7dd616a19b68df501a46c6d643771b547be0bb62a6b780e1ca3"
     end
     on_intel do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.10/gossms_v0.0.10_darwin_amd64.tar.gz"
-      sha256 "626e9c5938e68e600949f2640890d62441afb100471b2157bc3bce056139656d"
+      url "https://github.com/radix29/gossms/releases/download/v0.0.11/gossms_v0.0.11_darwin_amd64.tar.gz"
+      sha256 "95d77b6fc06b0b2163217bc9fd339cd9e851e6480268c1bf93bb31e6fabad619"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.10/gossms_v0.0.10_linux_arm64.tar.gz"
-      sha256 "f77a075a469af069a7f8549e5c47925c0a2266a57a6e11fa1f5338bdd31bfb92"
+      url "https://github.com/radix29/gossms/releases/download/v0.0.11/gossms_v0.0.11_linux_arm64.tar.gz"
+      sha256 "641c606aa75c0ba44ff07ab5fcc55fc4c619a6ef29784236a2a9f77c5d58ab4f"
     end
     on_intel do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.10/gossms_v0.0.10_linux_amd64.tar.gz"
-      sha256 "2a42a0336b855f5117569404ed091f3b61e881e8dbac0ae06ad4002394ff815d"
+      url "https://github.com/radix29/gossms/releases/download/v0.0.11/gossms_v0.0.11_linux_amd64.tar.gz"
+      sha256 "b182c23a687edb35292ee7d216a3d4591c75ca32e47a08fb9a4df07a1745b048"
     end
   end
 

@@ -3,7 +3,7 @@
 class Gossms < Formula
   desc "Terminal reimplementation of SQL Server Management Studio"
   homepage "https://github.com/radix29/gossms"
-  version "0.0.11"
+  version "0.0.12"
   license "GPL-3.0-or-later"
 
   livecheck do
@@ -13,28 +13,30 @@ class Gossms < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.11/gossms_v0.0.11_darwin_arm64.tar.gz"
-      sha256 "2ff1f135ee55b7dd616a19b68df501a46c6d643771b547be0bb62a6b780e1ca3"
+      url "https://github.com/radix29/gossms/releases/download/v0.0.12/gossms_v0.0.12_darwin_arm64.tar.gz"
+      sha256 "521d12d1a01d0784a5ab5faf9bfab519779543034d699f0dd2275010e4ed49ee"
     end
     on_intel do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.11/gossms_v0.0.11_darwin_amd64.tar.gz"
-      sha256 "95d77b6fc06b0b2163217bc9fd339cd9e851e6480268c1bf93bb31e6fabad619"
+      url "https://github.com/radix29/gossms/releases/download/v0.0.12/gossms_v0.0.12_darwin_amd64.tar.gz"
+      sha256 "52f28ea9c3de622a834f8406ab6f84da74bec6384fdb66a5f9e9439eb7293918"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.11/gossms_v0.0.11_linux_arm64.tar.gz"
-      sha256 "641c606aa75c0ba44ff07ab5fcc55fc4c619a6ef29784236a2a9f77c5d58ab4f"
+      url "https://github.com/radix29/gossms/releases/download/v0.0.12/gossms_v0.0.12_linux_arm64.tar.gz"
+      sha256 "1874f703fe929e15c009577c79edd5e72bb4fa911cdb3b8faacd7b0151cde24c"
     end
     on_intel do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.11/gossms_v0.0.11_linux_amd64.tar.gz"
-      sha256 "b182c23a687edb35292ee7d216a3d4591c75ca32e47a08fb9a4df07a1745b048"
+      url "https://github.com/radix29/gossms/releases/download/v0.0.12/gossms_v0.0.12_linux_amd64.tar.gz"
+      sha256 "62554f15b6e7d3900403945adb978d8e05e8898289747811f183c5ac75b07ad1"
     end
   end
 
   def install
     bin.install "gossms"
+    # Launcher and icons; only the Linux archives carry share/.
+    share.install "share/applications", "share/icons" if OS.linux?
   end
 
   test do

@@ -12,23 +12,23 @@ class Gossms < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.15/gossms_v0.0.15_darwin_arm64.tar.gz"
-      sha256 "65f5ff4219639a008b4b29749e762f53208a45076f900b7daaa02874845f2825"
+      url "https://github.com/radix29/gossms/releases/download/v0.1.0/gossms_v0.1.0_darwin_arm64.tar.gz"
+      sha256 "a8a245dbeab611a6c2a2e6e1ca303e215c73ddc0de584a37c11da8e116284fae"
     end
     on_intel do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.15/gossms_v0.0.15_darwin_amd64.tar.gz"
-      sha256 "19552bd032f6e7a602cdf4382703ed75e7d746e6a209d12257c9c0d69065dbb1"
+      url "https://github.com/radix29/gossms/releases/download/v0.1.0/gossms_v0.1.0_darwin_amd64.tar.gz"
+      sha256 "f47124e1432a31336e67e2a0a45b1a9f6ccac798e0fb8c9f04e76f0c7220eed3"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.15/gossms_v0.0.15_linux_arm64.tar.gz"
-      sha256 "36f957fd8a2dbdb061c2ea00193805a2b7788e60a7295420f2ff056d089a7396"
+      url "https://github.com/radix29/gossms/releases/download/v0.1.0/gossms_v0.1.0_linux_arm64.tar.gz"
+      sha256 "b840389699575441db43c8fb892f82d109fa0e1b2b9f9328c26da6bab5af6e32"
     end
     on_intel do
-      url "https://github.com/radix29/gossms/releases/download/v0.0.15/gossms_v0.0.15_linux_amd64.tar.gz"
-      sha256 "1b3d040a0a03ba7dce9c5d9c6d05f320c37a0375bfa4c4e9b2bafb48d4620b62"
+      url "https://github.com/radix29/gossms/releases/download/v0.1.0/gossms_v0.1.0_linux_amd64.tar.gz"
+      sha256 "f542668079dd64b8c99bc707a54ddd4adb94cf2c529f41df11bb60aa91e26516"
     end
   end
 
